@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+.drag_and_drop {
+  font-family: "Open Sans", sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.section__wrapper {
+  border: 1px solid black;
+  flex: 1;
+  &:not(:last-child) {
+    margin-right: 2%;
+  }
+
+  h2 {
+    text-align: center;
+    background-color: #ccc;
+  }
+}
+
+.section__body {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+}
+.card {
+  border: 1px dashed #ccc;
+}
+.card__header {
+  cursor: grab;
+  background-color: #eee;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+.card__text {
+  padding: 10px;
+}
+
+.card.hold {
+  cursor: grabbing;
+  position: absolute;
+  transform: rotate(1deg);
+}
+
+.hidden {
+  display: none;
+}
